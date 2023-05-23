@@ -1,0 +1,7 @@
+{
+  "name": "webee personas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

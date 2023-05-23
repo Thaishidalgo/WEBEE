@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="grup">
+  <ion-fab vertical="top" horizontal="end" slot="fixed" [routerLink]="['/#']">
+    <ion-fab-button>
+      <ion-icon name="pencil-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <img src="{{grup.acf.bee.url}}" width=50%/>
+ <h1>{{grup.acf.group_name}}</h1>
+ <h3>Members</h3>
+
+ <div class="names">
+  <div class="name" *ngFor="let u of grup.acf.users">
+    <img src="{{u.foto}}">
+    <p> {{u.nickname}}</p>
+  </div>
+</div>
+</ion-content>

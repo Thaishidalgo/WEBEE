@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form" *ngIf="step==0">
+  <h1>CREATE A GROUP</h1>
+  <p>Start by writing the name of the group</p>
+  <ion-input class="bar1" type="text" placeholder="Type name..." [(ngModel)]="group.name"></ion-input>
+  <ion-button (click)="nextStep()" expand="block" >Next</ion-button>
+</div>
+
+
+<div class="form" *ngIf="step==1">
+  <h1>CREATE A GROUP</h1>
+  <p>Add People</p>
+  <div class="searchcontacts">
+    <ion-input class="contacts" type="text" placeholder="Search contacts..."></ion-input>
+  </div>
+  <div class="searchusers">
+  <ion-input type="text" placeholder="Type name..."></ion-input>
+  </div>
+  <ion-button (click)="nextStep()" expand="block" >Next</ion-button>
+</div>
+
+
+<div class="form" *ngIf="step==2">
+  <div class="contentstep2">
+  <h1>CREATE A GROUP</h1>
+  <p>Create your bee</p>
+  <div class="abellaka">
+  <img src="../assets/abellanewpassword.png" alt="abellaforgot" width="242px" height="175px">
+</div>
+<p>Click bee to modify</p>
+  <ion-button (click)="nextStep()" expand="block" >Next</ion-button>
+</div>
+</div>
+
+
+<div class="form" *ngIf="step==3">
+  <h1>CREATE A GROUP</h1>
+  <p>"final result"</p>
+  
+  <ion-button class="botonacabado" [routerLink]="['/tabs/tab1']" expand="block" >OK</ion-button>
+</div>
+</ion-content>

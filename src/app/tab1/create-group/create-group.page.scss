@@ -1,0 +1,67 @@
+ion-content {
+    --padding-top: 60px;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    --padding-bottom: 60px;
+    --background: linear-gradient(to top, #6473FF 0%, #403ddc 100%);
+}
+
+ion-toolbar{
+    --background: transparent;
+}
+.contacts{
+    --background: #9BA5F8;
+    --placeholder-color: white;
+}
+.contentstep2{
+    text-align: center;
+}
+ion-input{
+    --background: white;
+    border-radius: 15px;
+    --color: black; 
+    --placeholder-color: #6473FF;
+    height: 42px;
+    font-size: 14px;
+}
+.searchcontacts{
+    padding-bottom: 25px;
+    margin-top: 68px;
+}
+
+p, h1{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Signika-Bold';
+    font-size: 32px;
+}
+.bar1{
+    margin-top: 68px;
+}
+
+.abellaka{
+    margin-top: 44px;
+}
+
+p{
+    padding-top:37px;
+    font-size: 16px;
+}
+.botonacabado{
+    --background: #9BA5F8;
+    --border-radius: 30px;
+    --color: white; 
+    height: 50px;
+    font-weight: bold;
+    margin-top: 446px;
+}
+ion-button{
+    --background: #F7D442;
+    --border-radius: 30px;
+    --color: white; 
+    height: 50px;
+    font-weight: bold;
+    margin-top: 446px;
+}

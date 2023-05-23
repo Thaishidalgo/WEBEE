@@ -1,0 +1,52 @@
+ion-content{
+    --background: linear-gradient(to bottom, #6473FF 0%, #403ddc 30%, #000000 100%);
+    --padding-top: 60px;
+    --padding-bottom:100px;
+    --padding-start: 25px;
+    --padding-end: 25px;
+}
+ion-fab-button{
+    --background: #F7D442;
+}
+h1{
+    text-align: center;
+    font-family: "Signika-Bold";
+    font-size: 32px;
+    padding-bottom: 34px;
+}
+ion-searchbar{
+    --background:white;
+    --border-radius:35px;
+    height: 50px;
+}
+.buscargrups{
+    padding-bottom: 25px;
+}
+.group-box{
+
+    margin-bottom: 25px;
+
+}
+.header{
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #6473FF;
+    padding: 10px;
+}
+h2{
+    font-size: 16px;
+    padding-left: 19px;
+}
+.names{
+    background-color: #EBEFFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: #6473FF;
+    font-size: 14px;
+}
+

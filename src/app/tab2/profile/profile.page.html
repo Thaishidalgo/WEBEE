@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>PROFILE</h1>
+  <div class="imatge">
+    <img src="../assets/foto-lauren.png" alt="logotip" width="30%">
+  </div>
+ 
+  <h2>Lauren Wolf</h2>
+  <h6>Animator</h6>
+  
+  <ion-fab vertical="top" horizontal="start" slot="fixed" (click)="logout()">
+    <ion-fab-button>
+      <ion-icon name="log-out-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" [routerLink]="['/tabs/tab2/profile/settings']">
+    <ion-fab-button>
+      <ion-icon name="settings-outline" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    
+  <IonItem>
+      <IonLabel position="stacked">Name</IonLabel>
+      <ion-input placeholder="Enter name"></ion-input>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Email</IonLabel>
+      <ion-input placeholder="Enter email"></ion-input>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Date of birth</IonLabel>
+      <ion-input placeholder="Enter date"></ion-input>
+    </IonItem>
+    <IonItem>
+      <IonLabel  position="stacked">Studies</IonLabel>
+      <ion-input type="password" placeholder="Enter studies" class="studie"></ion-input>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Gender</IonLabel>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+        <ion-select-option value="o">Others</ion-select-option>
+      </ion-select>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Music</IonLabel>
+      <ion-select multiple="true" placeholder="Choose">
+      <ion-select-option value="h">Hardcore</ion-select-option>
+      <ion-select-option value="m">Metal</ion-select-option>
+      <ion-select-option value="p">Pop</ion-select-option>
+      <ion-select-option value="d">Dembow</ion-select-option>
+      <ion-select-option value="e">Electronic</ion-select-option>
+      <ion-select-option value="r">Reggaeton</ion-select-option>
+      <ion-select-option value="b">Bachata</ion-select-option>
+      <ion-select-option value="s">Salsa</ion-select-option>
+      <ion-select-option value="c">Cumbia</ion-select-option>
+      <ion-select-option value="t">Techno</ion-select-option>
+    </ion-select>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Something about you</IonLabel>
+      <ion-input class="something" type="password" placeholder="Type something" class="something"></ion-input>
+    </IonItem>
+    <IonItem>
+      <IonLabel position="stacked">Rol</IonLabel>
+      <ion-select placeholder="Select One">
+      <ion-select-option value="d">Driker</ion-select-option>
+      <ion-select-option value="dc">Dancer</ion-select-option>
+      <ion-select-option value="a">Animator</ion-select-option>
+      <ion-select-option value="b">Babbysitter</ion-select-option>
+      <ion-select-option value="a">Antisocial</ion-select-option>
+    </ion-select>
+    </IonItem>
+    <div class="centraresquerre">
+    <p><ion-checkbox></ion-checkbox>Facebook</p>
+    <p><ion-checkbox></ion-checkbox>Instagram</p>
+    </div>
+    <div class="buttoncenter">
+       <ion-button shape="round" expand="block" [routerLink]="['/tabs/tab2']" >SAVE CHANGES</ion-button>
+      </div>
+
+</ion-content>

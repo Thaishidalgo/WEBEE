@@ -1,0 +1,81 @@
+ion-content {
+    --padding-top: 60px;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    --padding-bottom: 60px;
+    --background: linear-gradient(to top, #6473FF 0%, #403ddc 100%);
+}
+
+ion-input{
+    --background: white;
+    margin:25px;
+    border-radius: 15px;
+    height: 42px;
+    border-style:none;
+    color: #403ddc;
+    font-size: 14px;
+}
+
+h1{
+    font-family: "Signika-Bold";
+    font-size: 32px;
+    text-align: center;
+}
+
+.instructions{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+.sendbutton{
+   text-align: center;
+}
+ion-button{
+    --color: white;
+    --background:#9BA5F8;
+    --border-radius: 50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tick{
+    padding-top: 20px;;
+}
+
+p.question {
+    text-align: center;
+}
+
+button{
+    color: #F7D442;
+    background-color: transparent;
+}
+
+.buttoncenter{
+    text-align: center;
+    margin-top: 47px;
+}
+
+ion-checkbox{
+    --border-radius: 50px;
+    --border-color: #F7D442;
+    --background-checked: #F7D442;
+    --border-color-checked: #F7D442;
+    --checkmark-color: #9BA5F8;
+    --size: 19px;
+
+}
+
+p{
+    text-align:left;
+    font-size: 12px;
+    color: #EBEFFF
+}
+
+.flex{
+    display:flex
+}

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Check your email</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>CHECK YOUR<br> EMAIL</h1>
+  <div class="abellaemail">
+    <img src="../assets/abellacheckemail.png" alt="abellaforgot" width="242px" height="175px">
+  </div>
+  <p>We have sent a password recovery<br> instruction to your email</p>
+  <div class="sendbutton">
+    <ion-button expand="block"[routerLink]="['/forgot-password/check-email/create-password']" >OK</ion-button>
+  </div>
+  </ion-content>

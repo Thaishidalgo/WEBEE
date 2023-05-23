@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <h1>MAP</h1>
+  <div>
+  <ion-fab vertical="top" horizontal="start" slot="fixed" [routerLink]="['/tabs/tab2/profile']">
+      <ion-fab-button>
+        <ion-icon name="happy-outline" size="large"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="top" horizontal="end" slot="fixed" [routerLink]="['/#']">
+      <ion-fab-button>
+        <ion-icon name="notifications-outline" size="large"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+  <div>
+    <ion-searchbar animated></ion-searchbar>
+  </div> 
+  <ion-fab class="adds" horizontal="start"[routerLink]="['/tabs/tab3/create-event']">
+    <ion-fab-button>
+      <ion-icon name="add" size="large" fill="clear"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab class="filters" horizontal="end" [routerLink]="['/#']">
+    <ion-fab-button>
+      <ion-icon name="filter" size="large"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <div class="imatge">
+    <img src="../assets/mapa.png" alt="map" width="100%">
+  </div>
+</ion-content>

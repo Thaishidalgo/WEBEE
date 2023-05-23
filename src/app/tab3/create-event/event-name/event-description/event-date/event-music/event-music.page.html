@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+  
+<ion-content>
+  <h1>CREATE AN EVENT</h1>
+  <p>Choose music</p>
+  <div class="music">
+  <ion-button>POP</ion-button>
+  <ion-button>REGGAETON</ion-button>
+  <ion-button>TECHNO</ion-button>
+  <ion-button>REGGAE</ion-button>
+  <ion-button>DEMBOW</ion-button>
+  <ion-button>HARD</ion-button>
+  <ion-button>METAL</ion-button>
+  <ion-button>BACHATA</ion-button>
+  <ion-button>ELECTRO</ion-button>
+  <ion-button>CUMBIA</ion-button>
+</div>
+  <ion-button [routerLink]="['/tabs/tab3/create-event/event-name/event-description/event-date/event-music/event-filters']" fill="clear" expand="block">Next</ion-button>
+</ion-content>

@@ -1,0 +1,46 @@
+ion-content {
+    --padding-top: 60px;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    --padding-bottom: 60px;
+    --background: linear-gradient(to top, #6473FF 0%, #403ddc 100%);
+}
+ 
+
+ion-slide{
+    display: inline-block; 
+}
+
+
+h1{
+    font-family: "Signika-Bold";
+    font-size: 32px;
+}
+
+.logointro{
+    width:90px;
+    height:110px;
+    margin-left: 143px;
+    margin-bottom: 60px;
+}
+.bucadill{
+    width: 326px;
+    height: 119px;
+    margin-top: 72px;
+}
+.abellaintro{
+    width: 148px;
+    height: 106px;
+    margin-top: 20px;
+}
+.introo{
+    width: 249px;
+    height: 497px;;
+    margin-left: 61px;
+}
+ion-button{
+    --color:white;
+    --background: #f7d442;
+    --border-radius: 30px;
+    margin-top: 74px;
+}

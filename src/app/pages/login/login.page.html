@@ -1,0 +1,38 @@
+
+<ion-content>
+  <div class="imatge">
+    <img src="../assets/logo_webee.png" alt="logotip" width="61px" height="75px">
+  </div>
+  
+  <h1>WELCOME!</h1>
+  <p>Login to continue</p>
+  <form (ngSubmit)="login()" [formGroup]="credentials">
+   
+        <ion-input class="email" type="email" placeholder="Email" formControlName="username"></ion-input>
+    
+      <div *ngIf="(username.dirty || username.touched) && username.errors" class="errors">
+        <span *ngIf="username.errors?.required">Email is required</span>
+        <span *ngIf="username.errors?.email">Email is invalid</span>
+      </div>
+  
+        <ion-input class="password" type="password" placeholder="Password" formControlName="password"></ion-input>
+      
+      <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+        <span *ngIf="password.errors?.required">Password is required</span>
+        <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
+      </div>
+      <div class="forgotpassword">
+        <p>Forgot password?<button type="button"  [routerLink]="['/forgot-password']">Click here!
+        </button></p>
+      </div>
+    <ion-button class="login" type="submit" expand="block" fill="clear" [disabled]="!credentials.valid">Log in</ion-button>
+
+   
+
+    <p>Don't have an account?</p>
+    <ion-button class="signup" type="button" expand="block" fill="clear" [routerLink]="['/register']">Sign up
+    </ion-button>
+ 
+  
+  </form>
+</ion-content>

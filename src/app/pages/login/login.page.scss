@@ -1,0 +1,86 @@
+ion-content {
+    --padding-top: 60px;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    --padding-bottom: 60px;
+    --background: linear-gradient(to top, #6473FF 0%, #403ddc 100%);
+}
+h1{
+    font-family: "Signika-Bold";
+    font-size: 32px;
+}
+
+p{
+    font-size: 16px;
+}
+ion-input{
+    --background: white; 
+    margin-bottom:20px;
+    border-radius: 15px;
+    height: 42px;;
+    border-style:none;
+    color: #6473FF;
+
+}
+
+ion-button{
+    color: white;
+    background-color: #9AA4FF;
+    border-radius: 30px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+ion-checkbox{
+    --border-radius: 50px;
+    --background-checked: #F7D442;
+    --border-color-checked: #F7D442;
+    --checkmark-color: black;
+    --size: 19px;
+}
+
+
+p, h1{
+    text-align: center;
+    margin: 25px;
+}
+.imatge{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.email{
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.forgotpassword {
+    text-align: right;
+    margin-bottom: 32px;
+}
+
+.login{
+    background-color: #F7D442;
+    margin-bottom: 110px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    color: #9AA4FF;
+    background-color: transparent;
+}
+
+.input-group {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.errors {
+    font-size: small;
+    color: #fff;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

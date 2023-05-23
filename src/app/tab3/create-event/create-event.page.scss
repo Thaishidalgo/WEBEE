@@ -1,0 +1,32 @@
+ion-content {
+    --padding-start: 25px;
+    --padding-end: 25px;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+    --background: linear-gradient(to top, #6473FF 0%, #403ddc 100%);
+}
+
+ion-toolbar{
+    --background: transparent;
+}
+
+ion-button{
+    margin-top: 460px;
+    --border-radius: 30px;
+    --background: #9BA5F8;
+    color: white;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 35px;
+    font-family: 'Signika-Bold';
+}
+p{
+    text-align: center;
+    margin-bottom: 38px;
+    font-size: 16px;
+    font-weight: bold;
+}

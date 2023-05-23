@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>SIGN UP</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>SIGN UP</h1>
+  <p class="instructions">Please enter the details below to continue</p>
+  <IonItem>
+    <ion-input placeholder="Name"></ion-input>
+  </IonItem>
+  <IonItem>
+    <ion-input placeholder="Date of birth"></ion-input>
+  </IonItem>
+  <IonItem>
+    <ion-input placeholder="Email"></ion-input>
+  </IonItem>
+  <IonItem>
+    <ion-input placeholder="Username"></ion-input>
+  </IonItem>
+  <IonItem>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </IonItem>
+  <IonItem>
+    <ion-input type="password" placeholder="Confirm password"></ion-input>
+  </IonItem>
+ <ion-grid>
+   <ion-row>
+     <ion-col class="tick" size="1">
+      <ion-checkbox></ion-checkbox> 
+     </ion-col>
+     <ion-col class="textcheckbox"><p>By signign up you agree to our terms and <b>conditions</b> &<br> <b>privacy policy</b></p></ion-col>
+    </ion-row>
+    <ion-row>
+     <ion-col class="tick" size="1">
+      <ion-checkbox></ion-checkbox>
+      </ion-col>
+      <ion-col class="textcheckbox"><p>Allow acces to the camera, contacts and location</p></ion-col>
+   </ion-row>
+  
+ </ion-grid>
+  <div class="buttoncenter">
+     <ion-button shape="round" expand="block" [routerLink]="['/login']" >Sign up</ion-button>
+    </div>
+</ion-content>

@@ -1,0 +1,79 @@
+ion-content{
+    --padding-start: 25px;
+    --padding-end: 25px;
+    --padding-top: 60px;
+    --padding-bottom:60px;
+}
+ion-input{
+    background-color: white;
+    border-radius: 15px;
+    color: blue;
+    margin: 5px;
+    margin-bottom: 25px;
+}
+
+ion-toolbar{
+    --background: transparent;
+}
+
+ion-fab-button{
+    --background: transparent;
+}
+.imatge{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1, h2, h6{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Signika-Bold';
+    font-size: 32px;
+    padding-bottom: 38px;
+}
+h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 14px;
+    margin-left: 30px;
+}
+ion-button{
+    --background: #F7D442;
+}
+.buttoncenter{
+    padding-bottom:100px;
+}
+.something{
+    --padding-bottom: 60px;
+}
+ion-select{
+    background-color: #9BA5F8;
+    border-radius: 15px;
+    margin-bottom: 30px;;
+    color: white;
+}
+
+ion-checkbox{
+    --background: transparent;
+    margin-right:10px;
+    --background-checked: #F7D442;
+    --checkmark-color:#6473FF; 
+    --border-color:#F7D442;
+    --border-radius: 30px;
+    --border-color-checked: #F7D442;
+    position: absolute; right: 90%;
+}
+
+.studie{
+    background-color: #9BA5F8;
+    color:white;
+}
+
+.something{
+    background-color: #9BA5F8;
+    color:white;
+}

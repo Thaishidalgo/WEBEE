@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="warning"></ion-back-button>
+    </ion-buttons>
+
+  <h1>CREATE AN EVENT</h1>
+  <p>Write a description of your event</p>
+  <ion-input placeholder="Type a description..."></ion-input>
+  <ion-button [routerLink]="['/tabs/tab3/create-event/event-name/event-description/event-date']" textcolor= "war" fill="clear"  expand="block">Next</ion-button>
+</ion-content>

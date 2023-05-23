@@ -1,0 +1,47 @@
+
+<ion-content [fullscreen]="true">
+  <h1>EVENTS</h1>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" [routerLink]="['/tabs/tab3/create-event']">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="botons">
+  <ion-button>Mine</ion-button>
+  <ion-button>Others</ion-button>
+  </div>
+
+  <h2>Coming</h2>
+  <div class="esdeveniment" *ngFor="let event of allEvents" [routerLink]="['/event-opened, g.id']">
+    <ion-grid>
+      <ion-row>
+        <ion-col size=30%>
+          <img src="../assets/RUSC.png" alt="RUSC" width="37px" height="36px">
+        </ion-col>
+        <ion-col>
+          <h3>{{event.title.rendered}}</h3>
+          <div class="dadesevent">
+          <p>{{event.date | date: 'd MMM, H:mm'}}</p>
+          <p>,  {{event.acf.age}}</p>
+        </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <h2>Past</h2>
+  <div class="esdeveniment" *ngFor="let event of allEvents">
+    <ion-grid>
+      <ion-row>
+        <ion-col size=30%>
+          <img src="../assets/RUSC.png" alt="RUSC" width="37px" height="36px">
+        </ion-col>
+        <ion-col>
+          <h3>{{event.title.rendered}}</h3>
+          <p>{{event.date | date: 'd MMM, H:mm'}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
